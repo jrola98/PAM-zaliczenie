@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greeting">Witaj</string>
+    <string name="previous">Powrót do menu</string>
+    <string name="submit">Wyślij</string>
+    <string name="bmiButton">Kalkulator BMI</string>
+    <string name="calcButton">Kalkulator</string>
+
+    <string name="toastBmi">Proszę wypełnić pola zwrostu i wagi.</string>
+    <string name="bmiGreeting">Kalkulator BMI</string>
+    <string name="weight">Waga (kg)</string>
+    <string name="height">Wzrost (m)</string>
+    <string name="bmiAnswer1">Twoje BMI to:</string>
+    <string name="bmiAnswer2">(Twoje BMI pojawi się tutaj)</string>
+    <string name="bmiTextAnswer">(Twoja klasyfikacja pojawi się tutaj)</string>
+    <string name="underweight">Niedowaga</string>
+    <string name="healthy">Zdrowa waga</string>
+    <string name="overweight">Nadwaga</string>
+    <string name="obesity">Otyłość</string>
+
+    <string name="namePrompt">Proszę wpisać swoje imię.</string>
+    <string name="name">Imię.</string>
+</resources>

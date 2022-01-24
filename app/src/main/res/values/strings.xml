@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Projekt zaliczeniowy</string>
+    <string name="greeting">Welcome</string>
+    <string name="previous">Back to menu</string>
+    <string name="submit">Submit</string>
+    <string name="bmiButton">BMI Calculator</string>
+    <string name="calcButton">Calculator</string>
+
+    <string name="toastBmi">Populate Weight and Height to Calculate BMI</string>
+    <string name="bmiGreeting">BMI Calculator</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height (m)</string>
+    <string name="bmiAnswer1">Your BMI is:</string>
+    <string name="bmiAnswer2">(Your BMI will appear here)</string>
+    <string name="bmiTextAnswer">(Your classificationwill appear here) </string>
+    <string name="underweight">Underweight</string>
+    <string name="healthy">Healthy weight</string>
+    <string name="overweight">Overweight </string>
+    <string name="obesity">Obese</string>
+
+    <string name="namePrompt">Please enter your name.</string>
+    <string name="name">Name</string>
+
+
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">X</string>
+    <string name="div">/</string>
+    <string name="equals">=</string>
+    <string name="clear">CE</string>
+
+</resources>

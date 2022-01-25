@@ -1,7 +1,9 @@
 package com.example.projektzaliczeniowy;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,8 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainMenu extends AppCompatActivity {
-    Button bmi, calculator;
-    TextView greeting;
+    Button bmi, calculator, newActivity;
+    TextView greeting, newText;
 
 
     @Override
@@ -22,6 +24,8 @@ public class MainMenu extends AppCompatActivity {
         bmi = (Button) findViewById(R.id.bmi);
         calculator = (Button) findViewById(R.id.calculator);
         greeting = (TextView) findViewById(R.id.greeting);
+        newText = findViewById(R.id.newText);
+        newActivity = findViewById(R.id.newActivity);
 
         Intent intent = getIntent();
         String name = intent.getExtras().getString("name");
@@ -41,6 +45,13 @@ public class MainMenu extends AppCompatActivity {
                 startCalculator();
             }
         });
+
+        newActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startNewActivity();
+            }
+        });
     }
 
 
@@ -54,5 +65,21 @@ public class MainMenu extends AppCompatActivity {
     private void startCalculator(){
         Intent startCalculator = new Intent(this, Calculator.class);
         startActivity(startCalculator);
+    }
+
+    private  void startNewActivity(){
+        Intent newActivity = new Intent(this, Ocena.class);
+        startActivityForResult(newActivity, 2);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 2){
+            if (resultCode == Activity.RESULT_OK){
+                String result = data.getStringExtra("result");
+                newText.setText(result);
+            }
+        }
     }
 }
